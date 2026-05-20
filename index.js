@@ -1,14 +1,14 @@
 function sumOfNEven(n) {
-        if (n === 0) return 0
+    if (n === 0) return 0
 
-        return (!(n % 2) ? n : 0) + sumOfNEven(n - 1)
+    return (!(n % 2) ? n : 0) + sumOfNEven(n - 1)
 }
 
 
 function sumOfEven(array, index = 0) {
-        if (array.length <= index) return 0
+    if (array.length <= index) return 0
 
-        return (!(array[index] % 2) ? array[index] : 0) + sumOfEven(array, index + 1);
+    return (!(array[index] % 2) ? array[index] : 0) + sumOfEven(array, index + 1);
 }
 
 const ar = [1, 2, 3, 4];
@@ -19,14 +19,14 @@ const ar = [1, 2, 3, 4];
 
 function reverseStr(str) {
 
-        if (!str.length) return '';
+    if (!str.length) return '';
 
-        return reverseStr(str.slice(1)) + str[0]
+    return reverseStr(str.slice(1)) + str[0]
 }
 
 function reverseWords(str) {
-        if (!str.length) return '';
-        return str.split(' ').map(word => reverseStr(word)).join(' ');
+    if (!str.length) return '';
+    return str.split(' ').map(word => reverseStr(word)).join(' ');
 }
 
 //console.log(reverseWords('Hello World'));//olleH dlroW
@@ -36,41 +36,41 @@ function reverseWords(str) {
 const arr = [1, 2, 3, 4, 5, 6];
 
 function binarySearch(ar, search) {
-        let start = 0;
-        let end = ar.length - 1;
+    let start = 0;
+    let end = ar.length - 1;
 
-        while (start <= end) {
-
-                let mid = Math.floor((start + end) / 2);
-
-                if (ar[mid] === search) {
-                        return mid;
-                }
-
-                if (ar[mid] < search) {
-                        start = mid + 1;
-                } else {
-                        end = mid - 1;
-                }
-        }
-
-        return -1;
-}
-
-function binarySeachRecursive(ar, search, start = 0, end = ar.length - 1) {
-        if (start > end) return -1;
+    while (start <= end) {
 
         let mid = Math.floor((start + end) / 2);
 
         if (ar[mid] === search) {
-                return mid;
+            return mid;
         }
 
         if (ar[mid] < search) {
-                return binarySeachRecursive(ar, search, mid + 1, end);
+            start = mid + 1;
+        } else {
+            end = mid - 1;
         }
+    }
 
-        return binarySeachRecursive(ar, search, start, mid - 1);
+    return -1;
+}
+
+function binarySeachRecursive(ar, search, start = 0, end = ar.length - 1) {
+    if (start > end) return -1;
+
+    let mid = Math.floor((start + end) / 2);
+
+    if (ar[mid] === search) {
+        return mid;
+    }
+
+    if (ar[mid] < search) {
+        return binarySeachRecursive(ar, search, mid + 1, end);
+    }
+
+    return binarySeachRecursive(ar, search, start, mid - 1);
 }
 
 // the work increases very slowly even if input becomes huge.
@@ -98,92 +98,136 @@ console.log("Is prime:", prime(11));
 //Linked List
 
 class Node {
-    constructor (value){
+    constructor(value) {
         this.value = value;
         this.next = null;
     }
 }
 
+
 class LinkedList {
-    constructor (){
+    constructor() {
         this.head = null;
         this.size = 0;
     }
-    
-    prepend(value){
-        const node = new Node(value);
-        
-        if(!this.isEmpty()) {
-            node.next = this.head
+
+    prepend(value) {
+        const node = new Node(value)
+
+        if (!this.isEmpty()) {
+            node.next = this.head;
         }
-        
+        let curr = this.head;
+
         this.head = node;
-        this.size++;
+        this.size++
     }
-    
-    append(value){
-       const node = new Node(value);
-       
-       if(this.isEmpty()){
-           this.head = node;
-       }else{
-           let curr = this.head;
-           
-           while(curr.next){
-               curr = curr.next
-           }
-           
-           curr.next=node;
-       }
-       this.size++;
-    }
-    
-    print () {
-        if(this.isEmpty()){
-            console.log("The List is Empty");
-        }else {
+
+    append(value) {
+        const node = new Node(value);
+
+        if (this.isEmpty()) {
+            this.head = node;
+        } else {
             let curr = this.head;
-            let listValues = '';
-            
-            while(curr){
-                listValues += `${curr.value} `;
+            while (curr.next) {
                 curr = curr.next;
             }
-            
-            console.log(listValues)
-            
+            curr.next = node;
         }
+
+        this.size++;
     }
-    
-    removeFirst(){
-        if(this.isEmpty()){
-           return console.log("This list is empty, not posible to remove!");
+
+    print() {
+        if (this.isEmpty()) {
+            return console.log("This is empty list!");
         }
-        
+        let curr = this.head;
+        let list = '';
+        while (curr) {
+            list += `${curr.value} `;
+            curr = curr.next;
+        }
+        console.log(list);
+    }
+
+    removeFirst() {
+        if (this.isEmpty()) {
+            return console.log("This is empty list!");
+        }
         this.head = this.head.next;
         this.size--;
     }
-    
-     removeLast(){
-       if(this.isEmpty()){
-           return console.log("This list is empty, not posible to remove!");
+
+    removeLast() {
+        if (this.isEmpty()) {
+            return console.log("This is empty list!");
         }
 
         let curr = this.head;
-        let prev = null;
 
-        while(curr && curr.next.next){
-            curr=curr.next;
+        while (curr.next?.next) {
+            curr = curr.next;
         }
-        
-        curr.next=null;
+
+        curr.next = null
         this.size--;
     }
-    
+
+    findMiddle() {
+        if (this.isEmpty()) {
+            return console.log("List is empty!");
+        }
+
+        let slow = this.head;
+        let fast = this.head;
+
+        while (fast?.next?.next) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        console.log(slow.value);
+    }
+
+    findRemoveMid() {
+
+        if (this.isEmpty()) {
+            return console.log("List is empty!");
+        }
+
+        // only one node
+        if (this.size === 1) {
+            this.head = null;
+            this.size--;
+            return;
+        }
+
+        let slow = this.head;
+        let fast = this.head;
+        let prev = null;
+
+        while (fast?.next?.next) {
+            prev = slow;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        // remove middle
+        if (prev) {
+            prev.next = slow.next;
+        } else {
+            // for 2-node case
+            this.head = this.head.next;
+        }
+
+        this.size--;
+    }
     isEmpty() {
         return this.size === 0;
     }
-    
+
     getSize() {
         return this.size;
     }
@@ -195,10 +239,28 @@ list.prepend(1)
 list.prepend(2)
 list.prepend(3)
 list.prepend(4)
+list.prepend(5)
+list.prepend(6)
+list.prepend(7)
+list.prepend(8)
+list.prepend(9)
+list.append(0)
+list.append(2)
 list.print()
-list.removeFirst()
-list.append(23)
+list.findMiddle()
+list.findRemoveMid()
 list.print()
-list.removeFirst()
-list.print()
+
+// list.removeFirst();
+// list.print()
+// list.removeLast()
+// list.removeLast()
+// list.removeLast()
+// list.removeLast()
+// list.print()
+
+
+
+console.log(list.isEmpty())
+console.log(list.getSize())
 
