@@ -224,6 +224,25 @@ class LinkedList {
 
         this.size--;
     }
+
+    reverce() {
+        if (this.isEmpty()) {
+            return console.log("List is empty!");
+        }
+
+        let prev = null;
+        let curr = this.head;
+
+        while (curr) {            
+            let next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        this.head = prev;
+
+    }
     isEmpty() {
         return this.size === 0;
     }
@@ -244,12 +263,15 @@ list.prepend(6)
 list.prepend(7)
 list.prepend(8)
 list.prepend(9)
-list.append(0)
-list.append(2)
+
 list.print()
-list.findMiddle()
-list.findRemoveMid()
-list.print()
+list.reverce();
+list.print();
+
+
+// list.findMiddle()
+// list.findRemoveMid()
+// list.print()
 
 // list.removeFirst();
 // list.print()
