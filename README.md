@@ -1,45 +1,65 @@
-# Data Structures & Algorithms — Study Guide
+# 📚 Data Structures & Algorithms — Complete Study Guide
 
-A comprehensive Q&A reference covering DSA fundamentals, memory management, complexity analysis, and core data structures.
+> A deep-dive Q&A reference for mastering DSA fundamentals — from memory management to advanced algorithm patterns. Built for learners who want to understand the *why*, not just the *what*.
 
----
-
-## Table of Contents
-
-1. [What is an Algorithm?](#what-is-an-algorithm)
-2. [What is a Data Structure?](#what-is-a-data-structure)
-3. [Memory Allocation & Memory Leak](#memory-allocation--memory-leak)
-4. [How to Prevent Memory Leaks](#how-to-prevent-memory-leaks)
-5. [Complexity Analysis](#complexity-analysis)
-6. [Asymptotic Analysis & Big-O Notation](#asymptotic-analysis--big-o-notation)
-7. [Time Complexity — Best, Average & Worst Cases](#time-complexity--best-average--worst-cases)
-8. [Divide and Conquer Algorithm](#divide-and-conquer-algorithm)
-9. [Linear Search vs Binary Search](#linear-search-vs-binary-search)
-10. [Linear vs Non-Linear Data Structures](#linear-vs-non-linear-data-structures)
-11. [Applications of Binary Search](#applications-of-binary-search)
-12. [Array Types](#array-types)
-13. [What is Recursion?](#what-is-recursion)
-14. [Applications of Recursion](#applications-of-recursion)
-15. [Stack](#stack)
-16. [Linked List](#linked-list)
-17. [Doubly Linked List](#doubly-linked-list)
-18. [Circular Linked List](#circular-linked-list)
-19. [Linked List vs Array](#linked-list-vs-array)
-20. [Linked List Operations — Sample Workouts](#linked-list-operations--sample-workouts)
-21. [String Concepts & Sample Workouts](#string-concepts--sample-workouts)
-22. [Linear Search — Sample Workouts](#linear-search--sample-workouts)
-23. [Binary Search — Sample Workouts](#binary-search--sample-workouts)
-24. [Iterative vs Recursive Binary Search](#iterative-vs-recursive-binary-search)
-25. [Recursion — Sample Workouts](#recursion--sample-workouts)
-26. [Stack — Sample Workouts](#stack--sample-workouts)
-26. [Space Complexity](#space-complexity)
-27. [Tail Recursion](#tail-recursion)
-28. [Two Pointer Technique](#two-pointer-technique)
-29. [Applications of All Structures](#applications-of-all-structures)
+![DSA](https://img.shields.io/badge/Topic-Data%20Structures%20%26%20Algorithms-blue)
+![Level](https://img.shields.io/badge/Level-Beginner%20to%20Intermediate-green)
+![Language](https://img.shields.io/badge/Code-JavaScript-yellow)
 
 ---
 
-## What is an Algorithm?
+## 🗺️ How to Use This Guide
+
+- Read each **Q&A** to understand the concept deeply
+- Study the **code examples** — don't just read them, type them out
+- Complete every **sample workout** before moving on
+- Use the **comparison tables** to lock in the differences
+- Come back to the **applications** section to connect theory to real-world use
+
+---
+
+## 📋 Table of Contents
+
+| # | Topic |
+|---|---|
+| 1 | [What is an Algorithm?](#what-is-an-algorithm) |
+| 2 | [What is a Data Structure?](#what-is-a-data-structure) |
+| 3 | [Memory Allocation & Memory Leak](#memory-allocation--memory-leak) |
+| 4 | [How to Prevent Memory Leaks](#how-to-prevent-memory-leaks) |
+| 5 | [Complexity Analysis](#complexity-analysis) |
+| 6 | [Asymptotic Analysis & Big-O Notation](#asymptotic-analysis--big-o-notation) |
+| 7 | [Time Complexity — Best, Average & Worst Cases](#time-complexity--best-average--worst-cases) |
+| 8 | [Divide and Conquer Algorithm](#divide-and-conquer-algorithm) |
+| 9 | [Linear Search vs Binary Search](#linear-search-vs-binary-search) |
+| 10 | [Linear vs Non-Linear Data Structures](#linear-vs-non-linear-data-structures) |
+| 11 | [Applications of Binary Search](#applications-of-binary-search) |
+| 12 | [Array Types](#array-types) |
+| 13 | [What is Recursion?](#what-is-recursion) |
+| 14 | [Applications of Recursion](#applications-of-recursion) |
+| 15 | [Stack](#stack) |
+| 16 | [Linked List](#linked-list) |
+| 17 | [Doubly Linked List](#doubly-linked-list) |
+| 18 | [Circular Linked List](#circular-linked-list) |
+| 19 | [Linked List vs Array](#linked-list-vs-array) |
+| 20 | [Linked List Operations — Sample Workouts](#linked-list-operations--sample-workouts) |
+| 21 | [String Concepts & Sample Workouts](#string-concepts--sample-workouts) |
+| 22 | [Linear Search — Sample Workouts](#linear-search--sample-workouts) |
+| 23 | [Binary Search — Sample Workouts](#binary-search--sample-workouts) |
+| 24 | [Iterative vs Recursive Binary Search](#iterative-vs-recursive-binary-search) |
+| 25 | [Recursion — Sample Workouts](#recursion--sample-workouts) |
+| 26 | [Stack — Sample Workouts](#stack--sample-workouts) |
+| 27 | [Space Complexity](#space-complexity) |
+| 28 | [Tail Recursion](#tail-recursion) |
+| 29 | [Two Pointer Technique](#two-pointer-technique) |
+| 30 | [Sorting Algorithms Overview](#sorting-algorithms-overview) |
+| 31 | [Queue](#queue) |
+| 32 | [Common DSA Problem Patterns](#common-dsa-problem-patterns) |
+| 33 | [DSA Cheat Sheet](#dsa-cheat-sheet) |
+| 34 | [Applications of All Structures](#applications-of-all-structures) |
+
+---
+
+## 🧠 What is an Algorithm?
 
 **Q: What is an algorithm?**
 
@@ -56,7 +76,7 @@ An algorithm is a finite, well-defined sequence of instructions or steps used to
 
 ---
 
-## What is a Data Structure?
+## 🗂️ What is a Data Structure?
 
 **Q: What is a data structure?**
 
@@ -71,7 +91,7 @@ A data structure is a way of organizing, storing, and managing data in memory so
 
 ---
 
-## Memory Allocation & Memory Leak
+## 💾 Memory Allocation & Memory Leak
 
 **Q: What is memory allocation?**
 
@@ -110,7 +130,7 @@ function store(key, value) {
 
 ---
 
-## How to Prevent Memory Leaks
+## 🛡️ How to Prevent Memory Leaks
 
 **Q: How do you prevent memory leaks?**
 
@@ -124,7 +144,7 @@ function store(key, value) {
 
 ---
 
-## Complexity Analysis
+## 📊 Complexity Analysis
 
 **Q: What is complexity analysis?**
 
@@ -138,7 +158,7 @@ Complexity is expressed as a function of input size `n`, using Big-O notation.
 
 ---
 
-## Asymptotic Analysis & Big-O Notation
+## 📈 Asymptotic Analysis & Big-O Notation
 
 **Q: What is asymptotic analysis?**
 
@@ -164,7 +184,7 @@ Big-O notation expresses the upper bound (worst-case) of an algorithm's growth r
 
 ---
 
-## Time Complexity — Best, Average & Worst Cases
+## ⏱️ Time Complexity — Best, Average & Worst Cases
 
 **Q: What are best, average, and worst case complexities?**
 
@@ -187,7 +207,7 @@ Worst-case complexity gives a guaranteed upper bound on performance. In producti
 
 ---
 
-## Divide and Conquer Algorithm
+## ⚔️ Divide and Conquer Algorithm
 
 **Q: What is divide and conquer?**
 
@@ -208,7 +228,7 @@ Divide and conquer is an algorithm design paradigm that works by recursively bre
 
 ---
 
-## Linear Search vs Binary Search
+## 🔍 Linear Search vs Binary Search
 
 **Q: What is linear search?**
 
@@ -256,7 +276,7 @@ function binarySearch(arr, target) {
 
 ---
 
-## Linear vs Non-Linear Data Structures
+## 🌐 Linear vs Non-Linear Data Structures
 
 **Q: What is the difference between linear and non-linear data structures?**
 
@@ -270,7 +290,7 @@ function binarySearch(arr, target) {
 
 ---
 
-## Applications of Binary Search
+## 🎯 Applications of Binary Search
 
 **Q: What are the real-world applications of binary search?**
 
@@ -285,7 +305,7 @@ function binarySearch(arr, target) {
 
 ---
 
-## Array Types
+## 🧩 Array Types
 
 **Q: What is a Jagged Array?**
 
@@ -322,7 +342,7 @@ const hetero = [1, "hello", true, null, { key: "value" }];
 
 ---
 
-## What is Recursion?
+## 🔄 What is Recursion?
 
 **Q: What is recursion?**
 
@@ -349,7 +369,7 @@ function factorial(n) {
 
 ---
 
-## Applications of Recursion
+## 🌀 Applications of Recursion
 
 **Q: What are the applications of recursion?**
 
@@ -366,7 +386,7 @@ function factorial(n) {
 
 ---
 
-## Stack
+## 📦 Stack
 
 **Q: What is a Stack?**
 
@@ -530,7 +550,7 @@ console.log(nextGreaterElement([4, 5, 2, 10, 8])); // [5, 10, 10, -1, -1]
 
 ---
 
-## Linked List
+## 🔗 Linked List
 
 **Q: What is a linked list and what are its applications?**
 
@@ -571,7 +591,7 @@ A linked list is a linear data structure where elements (called **nodes**) are s
 
 ---
 
-## Doubly Linked List
+## ↔️ Doubly Linked List
 
 **Q: What is a doubly linked list?**
 
@@ -590,7 +610,7 @@ null ← [10 | ↔] ↔ [20 | ↔] ↔ [30 | null]
 
 ---
 
-## Circular Linked List
+## 🔁 Circular Linked List
 
 **Q: What is a circular linked list?**
 
@@ -610,7 +630,7 @@ Can be singly or doubly circular.
 
 ---
 
-## Linked List vs Array
+## ⚖️ Linked List vs Array
 
 | Feature | Array | Linked List |
 |---|---|---|
@@ -625,7 +645,7 @@ Can be singly or doubly circular.
 
 ---
 
-## Linked List Operations — Sample Workouts
+## 💪 Linked List Operations — Sample Workouts
 
 ### 1. Construction of Singly & Doubly Linked List
 
@@ -778,7 +798,7 @@ class DoublyLinkedList {
 
 ---
 
-## String Concepts & Sample Workouts
+## 🔤 String Concepts & Sample Workouts
 
 **Q: What are key string concepts in DSA?**
 
@@ -835,7 +855,7 @@ console.log(charFrequency("hello")); // { h:1, e:1, l:2, o:1 }
 
 ---
 
-## Linear Search — Sample Workouts
+## 🔎 Linear Search — Sample Workouts
 
 ### Sample Workout 1 — Basic linear search
 
@@ -883,7 +903,7 @@ console.log(linearSearch2D(matrix, 5)); // [1, 1]
 
 ---
 
-## Iterative vs Recursive Binary Search
+## 🔀 Iterative vs Recursive Binary Search
 
 **Q: Which is better — iterative or recursive binary search, and why?**
 
@@ -950,7 +970,7 @@ For an array of 1 billion elements, recursive binary search makes at most **~30 
 
 ---
 
-## Binary Search — Sample Workouts
+## 🎯 Binary Search — Sample Workouts
 
 ### Sample Workout 1 — Iterative binary search
 
@@ -1008,7 +1028,7 @@ console.log(sqrtBinarySearch(10)); // 3 (floor)
 
 ---
 
-## Recursion — Sample Workouts
+## 🌀 Recursion — Sample Workouts
 
 ### Sample Workout 1 — Fibonacci sequence
 
@@ -1056,7 +1076,7 @@ console.log(flattenArray([1, [2, [3, [4]], 5]])); // [1, 2, 3, 4, 5]
 
 ---
 
-## Stack — Sample Workouts
+## 📦 Stack — Sample Workouts
 
 ### Sample Workout 1 — Evaluate a postfix expression
 
@@ -1149,7 +1169,7 @@ console.log(ms.getMin()); // 3
 
 ---
 
-## Space Complexity
+## 🧮 Space Complexity
 
 **Q: What is space complexity?**
 
@@ -1176,7 +1196,7 @@ Often you can reduce time complexity by using more memory, or reduce memory usag
 
 ---
 
-## Tail Recursion
+## 🐍 Tail Recursion
 
 **Q: What is tail recursion?**
 
@@ -1204,7 +1224,7 @@ console.log(factorialTail(5)); // 120
 
 ---
 
-## Two Pointer Technique
+## 👆👆 Two Pointer Technique
 
 **Q: What is the two pointer technique?**
 
@@ -1254,21 +1274,472 @@ function hasCycle(head) {
 
 ---
 
-## Applications of All Structures
+---
+
+## 🔃 Sorting Algorithms Overview
+
+**Q: What are the most important sorting algorithms and how do they compare?**
+
+Sorting is one of the most fundamental operations in CS. Every algorithm has a different strategy — understanding the tradeoffs helps you pick the right one.
+
+### Visual Mental Model
+
+```
+Bubble Sort   → compare neighbors, bubble the biggest to the end each pass
+Selection Sort → find the minimum, place it at the front each pass
+Insertion Sort → pick each element, insert it into its correct position (like sorting cards)
+Merge Sort     → split in half recursively, then merge sorted halves
+Quick Sort     → pick a pivot, partition smaller/larger, recurse on each side
+```
+
+### Comparison Table
+
+| Algorithm | Best | Average | Worst | Space | Stable? | Notes |
+|---|---|---|---|---|---|---|
+| Bubble Sort | O(n) | O(n²) | O(n²) | O(1) | ✅ Yes | Simple, rarely used in practice |
+| Selection Sort | O(n²) | O(n²) | O(n²) | O(1) | ❌ No | Always O(n²), no early exit |
+| Insertion Sort | O(n) | O(n²) | O(n²) | O(1) | ✅ Yes | Best for small or nearly sorted data |
+| Merge Sort | O(n log n) | O(n log n) | O(n log n) | O(n) | ✅ Yes | Consistent, great for linked lists |
+| Quick Sort | O(n log n) | O(n log n) | O(n²) | O(log n) | ❌ No | Fastest in practice, bad pivot = O(n²) |
+
+**Q: What does "stable" mean in sorting?**
+
+A stable sort preserves the relative order of equal elements. Example: if two students have the same grade, a stable sort keeps them in their original order.
+
+**Q: When should you use each sorting algorithm?**
+
+- **Insertion Sort** — small arrays (< 20 elements), nearly sorted data, online sorting (data arrives one by one)
+- **Merge Sort** — when stability matters, sorting linked lists, external sorting (data too large for RAM)
+- **Quick Sort** — general purpose, large arrays in memory, when average performance matters more than worst case
+- **Bubble/Selection Sort** — learning purposes only; avoid in production
+
+### Merge Sort — Code
+
+```js
+function mergeSort(arr) {
+    if (arr.length <= 1) return arr;
+
+    const mid = Math.floor(arr.length / 2);
+    const left = mergeSort(arr.slice(0, mid));
+    const right = mergeSort(arr.slice(mid));
+
+    return merge(left, right);
+}
+
+function merge(left, right) {
+    const result = [];
+    let i = 0, j = 0;
+    while (i < left.length && j < right.length) {
+        if (left[i] <= right[j]) result.push(left[i++]);
+        else result.push(right[j++]);
+    }
+    return result.concat(left.slice(i)).concat(right.slice(j));
+}
+
+console.log(mergeSort([5, 3, 8, 1, 9, 2])); // [1, 2, 3, 5, 8, 9]
+```
+
+### Quick Sort — Code
+
+```js
+function quickSort(arr, low = 0, high = arr.length - 1) {
+    if (low < high) {
+        const pivotIdx = partition(arr, low, high);
+        quickSort(arr, low, pivotIdx - 1);
+        quickSort(arr, pivotIdx + 1, high);
+    }
+    return arr;
+}
+
+function partition(arr, low, high) {
+    const pivot = arr[high];
+    let i = low - 1;
+    for (let j = low; j < high; j++) {
+        if (arr[j] <= pivot) {
+            i++;
+            [arr[i], arr[j]] = [arr[j], arr[i]]; // swap
+        }
+    }
+    [arr[i + 1], arr[high]] = [arr[high], arr[i + 1]];
+    return i + 1;
+}
+
+console.log(quickSort([5, 3, 8, 1, 9, 2])); // [1, 2, 3, 5, 8, 9]
+```
+
+---
+
+## 🚶 Queue
+
+**Q: What is a Queue?**
+
+A queue is a linear data structure that follows the **FIFO** (First In, First Out) principle — the first element inserted is the first one removed. Think of a line at a ticket counter.
+
+```
+FRONT                        REAR
+  ↓                           ↓
+[ 10 ] ← [ 20 ] ← [ 30 ] ← [ 40 ]
+  ↑ dequeue                   ↑ enqueue
+```
+
+**Core operations:**
+| Operation | Description | Time Complexity |
+|---|---|---|
+| `enqueue(x)` | Add element to the rear | O(1) |
+| `dequeue()` | Remove element from the front | O(1) |
+| `peek() / front()` | View front element without removing | O(1) |
+| `isEmpty()` | Check if queue is empty | O(1) |
+| `size()` | Return number of elements | O(1) |
+
+**Q: How is a Queue implemented?**
+
+```js
+class Queue {
+    constructor() {
+        this.items = [];
+    }
+
+    enqueue(element) {
+        this.items.push(element);
+    }
+
+    dequeue() {
+        if (this.isEmpty()) return "Underflow — queue is empty";
+        return this.items.shift();
+    }
+
+    peek() {
+        if (this.isEmpty()) return "Queue is empty";
+        return this.items[0];
+    }
+
+    isEmpty() {
+        return this.items.length === 0;
+    }
+
+    size() {
+        return this.items.length;
+    }
+
+    print() {
+        console.log(this.items.join(' <- '));
+    }
+}
+
+const q = new Queue();
+q.enqueue(10);
+q.enqueue(20);
+q.enqueue(30);
+q.print();    // 10 <- 20 <- 30
+q.dequeue();  // 10
+q.peek();     // 20
+```
+
+**Q: What are the types of queues?**
+
+| Type | Description | Use Case |
+|---|---|---|
+| **Simple Queue** | Basic FIFO | Task scheduling |
+| **Circular Queue** | Rear connects back to front | CPU scheduling, ring buffers |
+| **Priority Queue** | Elements dequeued by priority, not order | Dijkstra's algorithm, hospital triage |
+| **Deque (Double-ended)** | Insert/remove from both ends | Sliding window problems, undo/redo |
+
+**Q: What are the applications of a Queue?**
+
+1. **CPU scheduling** — round-robin process scheduling
+2. **Print spooler** — documents printed in order received
+3. **BFS (Breadth First Search)** — graph/tree level-order traversal
+4. **Keyboard buffer** — keystrokes processed in order
+5. **Web server request handling** — requests served in order
+6. **Message queues** — Kafka, RabbitMQ, SQS
+7. **Cashier line simulation**
+8. **Asynchronous data transfer** — IO buffers
+
+### Queue Sample Workout — BFS Level Order Traversal
+
+```js
+// Level-order traversal of a binary tree using a queue
+function levelOrder(root) {
+    if (!root) return [];
+    const result = [], queue = [root];
+
+    while (queue.length) {
+        const levelSize = queue.length;
+        const level = [];
+        for (let i = 0; i < levelSize; i++) {
+            const node = queue.shift();
+            level.push(node.val);
+            if (node.left) queue.push(node.left);
+            if (node.right) queue.push(node.right);
+        }
+        result.push(level);
+    }
+    return result;
+}
+```
+
+---
+
+## 🧠 Common DSA Problem Patterns
+
+**Q: What are the most common patterns used to solve DSA problems?**
+
+Recognizing a pattern is more valuable than memorizing solutions. Most interview problems map to one of these patterns:
+
+---
+
+### 1. 🪟 Sliding Window
+Used when you need to find a subarray or substring that satisfies a condition.
+
+- **Fixed window:** window size is given
+- **Variable window:** window grows/shrinks based on a condition
+
+```
+When to use: "find max/min subarray of size k", "longest substring without repeating characters"
+```
+
+```js
+// Maximum sum subarray of size k
+function maxSumSubarray(arr, k) {
+    let maxSum = 0, windowSum = 0;
+    for (let i = 0; i < k; i++) windowSum += arr[i];
+    maxSum = windowSum;
+    for (let i = k; i < arr.length; i++) {
+        windowSum += arr[i] - arr[i - k];
+        maxSum = Math.max(maxSum, windowSum);
+    }
+    return maxSum;
+}
+
+console.log(maxSumSubarray([2, 1, 5, 1, 3, 2], 3)); // 9 (5+1+3)
+```
+
+---
+
+### 2. 👆👆 Two Pointers
+Already covered — use when working with sorted arrays or finding pairs.
+
+```
+When to use: "pair with target sum", "remove duplicates", "reverse array in-place"
+```
+
+---
+
+### 3. ⚡ Fast & Slow Pointers
+Two pointers moving at different speeds. Used for cycle detection and finding midpoints.
+
+```
+When to use: "detect cycle in linked list", "find middle of linked list", "palindrome linked list"
+```
+
+```js
+// Find middle of linked list
+function findMiddle(head) {
+    let slow = head, fast = head;
+    while (fast && fast.next) {
+        slow = slow.next;
+        fast = fast.next.next;
+    }
+    return slow; // slow is at the middle
+}
+```
+
+---
+
+### 4. 🔀 Merge Intervals
+Used when dealing with overlapping intervals.
+
+```
+When to use: "merge overlapping intervals", "insert interval", "meeting rooms"
+```
+
+```js
+function mergeIntervals(intervals) {
+    intervals.sort((a, b) => a[0] - b[0]);
+    const result = [intervals[0]];
+    for (let i = 1; i < intervals.length; i++) {
+        const last = result[result.length - 1];
+        if (intervals[i][0] <= last[1]) last[1] = Math.max(last[1], intervals[i][1]);
+        else result.push(intervals[i]);
+    }
+    return result;
+}
+
+console.log(mergeIntervals([[1,3],[2,6],[8,10],[15,18]]));
+// [[1,6],[8,10],[15,18]]
+```
+
+---
+
+### 5. 🔁 Cyclic Sort
+Used when the array contains numbers in a given range (1 to n).
+
+```
+When to use: "find missing number", "find duplicate", "find all missing numbers"
+```
+
+```js
+// Find missing number in array [1..n]
+function findMissingNumber(arr) {
+    let i = 0;
+    while (i < arr.length) {
+        const correct = arr[i] - 1;
+        if (arr[i] !== arr[correct]) [arr[i], arr[correct]] = [arr[correct], arr[i]];
+        else i++;
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== i + 1) return i + 1;
+    }
+    return arr.length + 1;
+}
+
+console.log(findMissingNumber([3, 1, 5, 4, 2, 7, 6])); // 8 (missing from 1-8)
+```
+
+---
+
+### 6. 🌲 Tree BFS / DFS
+- **BFS** — level by level using a queue → shortest path, level order
+- **DFS** — go deep using recursion/stack → path finding, subtree problems
+
+```
+BFS: use a queue, process level by level
+DFS: use recursion (or explicit stack), go deep first
+```
+
+---
+
+### Pattern Recognition Quick Guide
+
+| Problem says... | Pattern to use |
+|---|---|
+| Subarray / substring of size k | Sliding Window |
+| Sorted array, find pair/triplet | Two Pointers |
+| Linked list cycle / middle | Fast & Slow Pointers |
+| Overlapping intervals | Merge Intervals |
+| Array with numbers 1 to n | Cyclic Sort |
+| Level order / shortest path | BFS (Queue) |
+| Path in tree / all paths | DFS (Recursion) |
+| All combinations / permutations | Backtracking |
+| Optimal substructure, overlapping subproblems | Dynamic Programming |
+
+---
+
+## 📝 DSA Cheat Sheet
+
+### Big-O Quick Reference
+
+```
+O(1)        → Hash map lookup, array index access
+O(log n)    → Binary search, balanced BST operations
+O(n)        → Linear search, single loop
+O(n log n)  → Merge sort, quick sort (avg)
+O(n²)       → Bubble/selection/insertion sort, nested loops
+O(2ⁿ)       → Recursive Fibonacci, subset generation
+O(n!)       → Permutations, brute-force TSP
+```
+
+### Data Structure Operations Quick Reference
+
+| Structure | Access | Search | Insert | Delete |
+|---|---|---|---|---|
+| Array | O(1) | O(n) | O(n) | O(n) |
+| Linked List | O(n) | O(n) | O(1) | O(1)* |
+| Stack | O(n) | O(n) | O(1) | O(1) |
+| Queue | O(n) | O(n) | O(1) | O(1) |
+| Binary Search Tree | O(log n) | O(log n) | O(log n) | O(log n) |
+| Hash Table | N/A | O(1) avg | O(1) avg | O(1) avg |
+
+*O(1) deletion only when you already have a pointer to the node
+
+### Recursion Template
+
+```js
+function solve(input) {
+    // 1. Base case — when to stop
+    if (baseCondition) return baseValue;
+
+    // 2. Reduce the problem
+    const smallerInput = reduce(input);
+
+    // 3. Recursive call
+    const subResult = solve(smallerInput);
+
+    // 4. Build answer from sub-result
+    return buildAnswer(subResult, input);
+}
+```
+
+### Linked List Traversal Template
+
+```js
+let curr = head;
+while (curr !== null) {
+    // process curr.data
+    curr = curr.next;
+}
+```
+
+### Binary Search Template
+
+```js
+let left = 0, right = arr.length - 1;
+while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+    if (condition(mid)) return mid;          // found
+    else if (shouldGoRight(mid)) left = mid + 1;
+    else right = mid - 1;
+}
+return -1; // not found
+```
+
+### Common Mistakes to Avoid
+
+| Mistake | Fix |
+|---|---|
+| Off-by-one in binary search | Use `left <= right`, not `left < right` |
+| Forgetting base case in recursion | Always define what stops the recursion first |
+| Modifying array while iterating | Iterate backwards or use a copy |
+| Stack overflow in deep recursion | Convert to iterative or use tail recursion |
+| Using `==` instead of `===` in JS | Always use strict equality |
+| Not handling empty input | Check for null/empty at the start of every function |
+
+---
+
+## 🌍 Applications of All Structures
 
 | Data Structure | Real-World Applications |
 |---|---|
 | **Array** | Image pixels, matrices, lookup tables, spreadsheets |
 | **Linked List** | Browser history, undo/redo, music playlists, OS memory management |
 | **Stack** | Function call stack, expression evaluation, backtracking, undo/redo, balanced brackets |
-| **Queue** | Print spooler, CPU scheduling, BFS traversal, message queues |
+| **Queue** | Print spooler, CPU scheduling, BFS traversal, message queues (Kafka, RabbitMQ) |
 | **Tree** | File systems, HTML DOM, database B-trees, decision trees |
 | **Graph** | Social networks, GPS navigation, web crawlers, network routing |
 | **String** | Text editors, search engines, DNA sequencing, compilers |
 | **Recursion** | Compilers, OS file traversal, AI game trees, fractal rendering |
 | **Binary Search** | Database queries, version control (git bisect), autocomplete |
+| **Sorting** | E-commerce product ranking, database ORDER BY, leaderboards |
 | **Two Pointers** | Sorted array problems, cycle detection, sliding window |
+| **Sliding Window** | Network packet analysis, max subarray, longest substring |
 
 ---
 
-*Study tip: For each topic, implement the concept from scratch before looking at solutions. Understanding the "why" behind each structure is more valuable than memorizing syntax.*
+## 🗓️ Suggested Study Plan
+
+| Week | Topics |
+|---|---|
+| Week 1 | Algorithm basics, Memory, Complexity, Big-O, Arrays |
+| Week 2 | Recursion, Linked Lists (Singly, Doubly, Circular) |
+| Week 3 | Stack, Queue, String problems |
+| Week 4 | Searching (Linear + Binary), Sorting algorithms |
+| Week 5 | Two Pointers, Sliding Window, Problem Patterns |
+| Week 6 | Practice — solve 2 problems per day on each topic |
+
+---
+
+> 💡 **Study tip:** For each topic, implement the concept from scratch before looking at solutions. Understanding the *why* behind each structure is more valuable than memorizing syntax.
+>
+> 🔥 **Practice tip:** After reading a concept, close this guide and try to write the code from memory. That's when real learning happens.
+>
+> 🎯 **Interview tip:** When given a problem, say the pattern out loud first — *"this looks like a sliding window problem"* — before writing any code. It shows structured thinking.
