@@ -42,7 +42,6 @@ function bubbleSort(ar) {
             }
         }
         n = lastSwap;
-        console.log(n);
     }
     return ar;
 }
